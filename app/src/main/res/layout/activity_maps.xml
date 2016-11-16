@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="253dp"
+    tools:context="org.androidtown.myapplication10.MapsActivity" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="title"
+            android:ems="10"
+            android:id="@+id/editText" />
+
+        <Spinner
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:entries="@arrays/menu"
+            />
+
+        <Button
+            android:text="Button"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:onClick="onClickbutton1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="context"
+            android:ems="10"
+            android:id="@+id/editText2" />
+    </LinearLayout>
+</LinearLayout>
